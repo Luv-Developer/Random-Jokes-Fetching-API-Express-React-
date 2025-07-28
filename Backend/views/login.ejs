@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel = "stylesheet" type = "text/css" href = "/stylesheets/login.css">
+</head>
+<body>
+    <div class="particles" id="particles"></div>
+
+    <div class="login-container">
+        <h1>Welcome Back</h1>
+        <form action = "/login" method = "post" id="loginForm">
+            <div class="input-group">
+                <input name = "email" type="email" id="email" placeholder=" " required>
+                <i class="fas fa-envelope"></i>
+                <label for="email">Email</label>
+            </div>
+            <div class="input-group">
+                <input name = "password" type="password" id="password" placeholder=" " required>
+                <i class="fas fa-lock"></i>
+                <label for="password">Password</label>
+            </div>
+            <div class="forgot-password">
+                <a href="/register">Forgot password?</a>
+            </div>
+            <button type="submit" class="login-btn">Login</button>
+        </form>
+    </div>
+    <style src = "/javascripts/login.js"></style>
+</body>
+</html>
